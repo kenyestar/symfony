@@ -1,0 +1,57 @@
+﻿{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ include('blocks/header.html.twig') }}
+    <div id="content">
+        <div class="ic">Kick-ass Flash templates from TemplateMonster!</div>
+        <div class="container">
+            <!-- main-banner-small begin -->
+            <div class="main-banner-small">
+                <div class="inner">
+                    <h1>Even the biggest success Starts with a first step</h1>
+                </div>
+            </div>
+            <!-- main-banner-small end -->
+            <!-- box begin -->
+            <div class="box">
+                <div class="border-top">
+                    <div class="border-right">
+                        <div class="border-bot">
+                            <div class="border-left">
+                                <div class="left-top-corner">
+                                    <div class="right-top-corner">
+                                        <div class="right-bot-corner">
+                                            <div class="left-bot-corner">
+                                                <div class="inner">
+                                                    <h2>Proud to Be a Partner</h2>
+                                                    <p>Nothing is as good at showing your company’s advantages as a nice
+                                                        list of partners. Below is a perfect way to present this list -
+                                                        with partners’ company names, logos and short desriptions.</p>
+                                                    <ul class="list2">
+                                                        <ul class="list2">
+                                                            {% for partner in partners %}
+                                                                <li>
+                                                                    <img alt="" src="{{ asset('build/image_76x76.gif') }}"/><h4>
+                                                                        <strong>{{ partner.title }}</strong></h4>
+                                                                    {{ partner.text }}
+                                                                </li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- box end -->
+        </div>
+    </div>
+
+    {{ include('blocks/footer.html.twig') }}
+{% endblock %}

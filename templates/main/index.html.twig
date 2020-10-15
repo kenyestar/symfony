@@ -1,0 +1,203 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ include('blocks/header.html.twig') }}
+
+    <!-- content -->
+    <div id="content">
+        <div class="ic">Kick-ass Flash templates from TemplateMonster!</div>
+        <div class="container">
+            <!-- main-banner-big begin -->
+            <div class="main-banner-big">
+                <div class="inner">
+                    <h1>Even the biggest success Starts with a first step</h1>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
+            <!-- main-banner-big end -->
+            <div class="wrapper">
+                <div class="col-1 maxheight">
+                    <!-- box begin -->
+                    <div class="box maxheight">
+                        <div class="border-top maxheight">
+                            <div class="border-right maxheight">
+                                <div class="border-bot maxheight">
+                                    <div class="border-left maxheight">
+                                        <div class="left-top-corner maxheight">
+                                            <div class="right-top-corner maxheight">
+                                                <div class="right-bot-corner maxheight">
+                                                    <div class="left-bot-corner maxheight">
+                                                        <div class="inner">
+                                                            <h2>News Headlines</h2>
+                                                            <ul class="list1">
+                                                                {% for new in news %}
+                                                                <li>
+                                                                    <p>
+                                                                        {{ new.description }}
+                                                                    </p>
+                                                                    <a href="#">Read More</a>
+                                                                </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                            <a href="#" class="button"><em><b>GO TO NEWS
+                                                                        SECTION</b></em></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box end -->
+                </div>
+                <div class="col-2 maxheight">
+                    <!-- box begin -->
+                    <div class="box maxheight">
+                        <div class="border-top maxheight">
+                            <div class="border-right maxheight">
+                                <div class="border-bot maxheight">
+                                    <div class="border-left maxheight">
+                                        <div class="left-top-corner maxheight">
+                                            <div class="right-top-corner maxheight">
+                                                <div class="right-bot-corner maxheight">
+                                                    <div class="left-bot-corner maxheight">
+                                                        <div class="inner">
+                                                            <h2>Our Team</h2>
+                                                            <ul class="list2">
+                                                                {% for team in teams %}
+                                                                    <li><img alt=""
+                                                                             src="{{ asset('build/image_66x66.gif') }}"/>
+                                                                        <h5>{{ team.title }}</h5>
+                                                                        {{ team.position }}
+                                                                    </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                            <a href="#" class="button"><em><b>The Rest of Team</b></em></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box end -->
+                </div>
+                <div class="col-3 maxheight">
+                    <!-- box begin -->
+                    <div class="box maxheight">
+                        <div class="border-top maxheight">
+                            <div class="border-right maxheight">
+                                <div class="border-bot maxheight">
+                                    <div class="border-left maxheight">
+                                        <div class="left-top-corner maxheight">
+                                            <div class="right-top-corner maxheight">
+                                                <div class="right-bot-corner maxheight">
+                                                    <div class="left-bot-corner maxheight">
+                                                        <div class="inner">
+                                                            <h2>Featured Partners</h2>
+                                                            <ul class="list2">
+                                                                {% for partner in partners %}
+                                                                <li><img alt="" src="{{ asset('build/image_51x51.gif') }}"/>
+                                                                    <h6>
+                                                                        <a href="#">
+                                                                            {{ partner.title }}
+                                                                        </a>
+                                                                    </h6>
+                                                                </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                            <a href="{{ path('partners') }}" class="button"><em><b>View All Partners</b></em></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- extra-content -->
+    <div id="extra-content">
+        <div class="container">
+            <div class="wrapper">
+                <div class="col-1 maxheight">
+                    <!-- box begin -->
+                    <div class="box maxheight">
+                        <div class="border-top maxheight">
+                            <div class="border-right maxheight">
+                                <div class="border-bot maxheight">
+                                    <div class="border-left maxheight">
+                                        <div class="left-top-corner maxheight">
+                                            <div class="right-top-corner maxheight">
+                                                <div class="right-bot-corner maxheight">
+                                                    <div class="left-bot-corner maxheight">
+                                                        <div class="inner">
+                                                            <h2>About Us</h2>
+                                                            <img class="img-indent" alt=""
+                                                                 src="{{ asset('build/image_87x66.gif') }}"/>
+                                                            A perfect place to tell a couple of words about your company
+                                                            - just a little bit of introduction, leave the rest for a
+                                                            proper page.
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box end -->
+                </div>
+                <div class="col-2 maxheight">
+                    <!-- box begin -->
+                    <div class="box maxheight">
+                        <div class="border-top maxheight">
+                            <div class="border-right maxheight">
+                                <div class="border-bot maxheight">
+                                    <div class="border-left maxheight">
+                                        <div class="left-top-corner maxheight">
+                                            <div class="right-top-corner maxheight">
+                                                <div class="right-bot-corner maxheight">
+                                                    <div class="left-bot-corner maxheight">
+                                                        <div class="inner">
+                                                            <h2>Testimonial</h2>
+                                                            <img class="img-indent" alt=""
+                                                                 src="{{ asset('build/image_87x66.gif') }}"/>
+                                                            <h5>Testimonial Name</h5>
+                                                            We know you love it - showing off how your customers love
+                                                            you and your company. Therefore there should be a place for
+                                                            it - which is here.
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ include('blocks/footer.html.twig') }}
+{% endblock %}
