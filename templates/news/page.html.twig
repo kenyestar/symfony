@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ include('blocks/header.html.twig') }}
+    <div id="content">
+        <div class="container">
+            <!-- box begin -->
+            <div class="box">
+                <div class="border-top">
+                    <div class="border-right">
+                        <div class="border-bot">
+                            <div class="border-left">
+                                <div class="left-top-corner">
+                                    <div class="right-top-corner">
+                                        <div class="right-bot-corner">
+                                            <div class="left-bot-corner">
+                                                <div class="inner">
+                                                    <h2>{{ newsPage.title }}</h2>
+                                                    <p>{{ newsPage.text }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- box end -->
+        </div>
+    </div>
+
+    {{ include('blocks/footer.html.twig') }}
+{% endblock %}

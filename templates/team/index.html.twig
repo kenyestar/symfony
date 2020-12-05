@@ -30,11 +30,11 @@
                                                         with partners’ company names, logos and short desriptions.</p>
                                                     <ul class="list2">
                                                         <ul class="list2">
-                                                            {% for new in news %}
+                                                            {% for team in teams %}
                                                                 <li>
                                                                     <img alt="" src="{{ asset('build/image_76x76.gif') }}"/><h4>
-                                                                        <strong>{{ new.title }}</strong></h4>
-                                                                    {{ new.text }}
+                                                                        <strong>{{ team.title }}</strong></h4>
+                                                                    {{ team.text }}
                                                                 </li>
                                                             {% endfor %}
                                                         </ul>

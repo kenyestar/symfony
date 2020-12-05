@@ -36,11 +36,11 @@
                                                                     <p>
                                                                         {{ new.description }}
                                                                     </p>
-                                                                    <a href="#">Read More</a>
+                                                                    <a href="{{ path('news_page', {'id' : new.id}) }}">Read More</a>
                                                                 </li>
                                                                 {% endfor %}
                                                             </ul>
-                                                            <a href="#" class="button"><em><b>GO TO NEWS
+                                                            <a href="{{ path('news') }}" class="button"><em><b>GO TO NEWS
                                                                         SECTION</b></em></a>
                                                         </div>
                                                     </div>
@@ -76,7 +76,7 @@
                                                                     </li>
                                                                 {% endfor %}
                                                             </ul>
-                                                            <a href="#" class="button"><em><b>The Rest of Team</b></em></a>
+                                                            <a href="{{ path('team') }}" class="button"><em><b>The Rest of Team</b></em></a>
                                                         </div>
                                                     </div>
                                                 </div>
