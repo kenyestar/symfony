@@ -188,3 +188,38 @@ h6 {font-size:1em;font-weight:normal}
 #page6 #content .col-2 {width:302px;margin-right:22px}
 #page6 #content .col-3 {width:302px}
 #footer {background:url(../../../symfony2/assets/images/footer-bg.gif) left top repeat-x #717171}
+
+.poll-items label {
+    font-size: 14px;
+}
+
+.poll-items label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.poll-items input[type='radio'] {
+    display: inline-block;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.poll-items input[type='text'] {
+    display: block;
+}
+
+.poll-items input[type='email'] {
+    display: block;
+}
+
+.poll-items textarea {
+    display: block;
+}
+
+.poll-items {
+    margin-bottom: 31px;
+    border: 1px solid #cccc;
+    padding: 15px;
+}
